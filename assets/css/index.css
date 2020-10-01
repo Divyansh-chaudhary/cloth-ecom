@@ -1029,6 +1029,21 @@ footer {
   padding-right: 2rem;
 }
 
+.footer .one li {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer .one li:hover {
+  transform: translateX(5px);
+  color: var(--l-light-blue);
+}
+
+.footer .two .fas:hover {
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
 /*************************** media queries ***************************/
 @media screen and (min-width: 576px) {
   .footer .one {
