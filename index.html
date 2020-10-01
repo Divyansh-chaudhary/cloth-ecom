@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E - commerce website</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- slick css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <!-- slick theme css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+    <!-- AOS animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- preloader start -->
+    <div class="preloader-container">
+      <div class="preloader-circle"></div>
+      <div class="preloader">
+        <img src="./assets/images/logo/logo.png" alt="" />
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header-top start -->
+    <div class="header-top">
+      <div>
+        <img src="./assets/images/icon/header_icon.png" alt="" />
+        <div class="dropdown">
+          <span class="selected-currency">USA</span>
+          <span class="fas fa-angle-down"></span>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">USA</li>
+            <li class="dropdown-item">DJN</li>
+            <li class="dropdown-item">EUR</li>
+            <li class="dropdown-item">USD</li>
+          </ul>
+        </div>
+        <p>+ 77 88 33 883 888</p>
+      </div>
+      <div>
+        <a href="#">My Account</a>
+        <a href="#">Wish List</a>
+        <a href="#">Shopping</a>
+        <a href="#">Cart</a>
+        <a href="#">Checkout</a>
+      </div>
+    </div>
+    <!-- header-top end -->
+
+    <!-- mobile nav start -->
+    <nav class="navbar mobile-navbar">
+      <div class="nav-top-bar">
+        <img class="logo" src="./assets/images/logo/logo.png" alt="" />
+        <div class="cart-container">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <p>02</p>
+        </div>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Category</a></li>
+        <div class="nav-item">
+          <li>
+            <a href="#">Latest</a>
+            <div class="nav-item-item nav-product-item">
+              <p>Product List</p>
+              <p>Product Details</p>
+            </div>
+          </li>
+          <i class="fas nav-product-opener fa-plus"></i>
+        </div>
+        <div class="nav-item">
+          <li>
+            <a href="#">Blog</a>
+            <div class="nav-item-item nav-blog-item">
+              <p>Blog</p>
+              <p>Blog Details</p>
+            </div>
+          </li>
+          <i class="fas nav-blog-opener fa-plus"></i>
+        </div>
+        <div class="nav-item">
+          <li>
+            <a href="#">Pages</a>
+            <div class="nav-item-item nav-last-item">
+              <p>Login</p>
+              <p>Card</p>
+              <p>Element</p>
+              <p>About</p>
+              <p>Confirmation</p>
+              <p>Shopping Cart</p>
+              <p>Product Checkout</p>
+            </div>
+          </li>
+          <i class="fas fa-plus nav-last-item-opener"></i>
+        </div>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </div>
+    </nav>
+    <!-- mobile nav end -->
+
+    <!-- desktop nav start -->
+    <nav class="navbar desktop-navbar">
+      <div class="d_nav_top_bar">
+        <img class="d-logo" src="./assets/images/logo/logo.png" alt="" />
+        <div class="d_nav_items">
+          <li class="d_nav_item">Home</li>
+          <li class="d_nav_item">Category</li>
+          <li class="d_nav_item latest">
+            Latest<i class="badge hot-badge">HOT</i>
+            <div class="latest-dropdown d-nav-dropdown">
+              <p>Product List</p>
+              <p>Product Details</p>
+            </div>
+          </li>
+          <li class="d_nav_item">
+            Blog
+            <div class="blog-dropdown d-nav-dropdown">
+              <p>Blog</p>
+              <p>Blog Details</p>
+            </div>
+          </li>
+          <li class="d_nav_item">
+            Pages
+            <div class="pages-dropdown d-nav-dropdown">
+              <p>Login</p>
+              <p>Card</p>
+              <p>Element</p>
+              <p>About</p>
+              <p>Confirmation</p>
+              <p>Shopping Cart</p>
+              <p>Product Checkout</p>
+            </div>
+          </li>
+          <li class="d_nav_item">Contact</li>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="search products" name="search" />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="favourite">
+          <a href="#" class="fas fa-heart"></a>
+          <p>02</p>
+        </div>
+        <div class="d_cart_container">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <p>02</p>
+        </div>
+        <button class="d_sign_in">Sign In</button>
+      </div>
+    </nav>
+    <!-- desktop nav end -->
+
+    <!-- slider start -->
+    <header>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="img">
+            <img
+              data-aos="zoom-in"
+              data-aot-duration="600"
+              src="./assets/images/hero/hero_man.png"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2><i>60% Discount</i></h2>
+            <h1>Winter<br />Collection</h1>
+            <p><i>Best Cloth Collection By 2020!</i></p>
+            <button class="d_sign_in">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- slider end -->
+
+    <!-- main start -->
+    <main>
+      <!-- category section start -->
+      <section class="category">
+        <h1>Shop by Category</h1>
+        <div class="row">
+          <div class="column">
+            <img src="./assets/images/categori/cat1.jpg" alt="category 1" />
+            <div class="content">
+              <h2>Owmen's</h2>
+              <button>Best New Deals</button>
+              <p>New Collection</p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./assets/images/categori/cat2.jpg" alt="category 1" />
+            <div class="content text-center">
+              <p>Discount!</p>
+              <h2>Winter cloth</h2>
+              <p>New Collection</p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./assets/images/categori/cat3.jpg" alt="category 1" />
+            <div class="content">
+              <h2>Men's Cloth</h2>
+              <button>Best New Deals</button>
+              <p>New Collection</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- category section end -->
+
+      <!-- latest product start -->
+      <section class="latest">
+        <div class="latest-product-top">
+          <h1>Latest Product</h1>
+          <ul>
+            <li class="active">All</li>
+            <li>New</li>
+            <li>Featured</li>
+            <li>Offer</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="product-list">
+          <div class="product text-center">
+            <span class="badge new-badge">New</span>
+            <img src="./assets/images/categori/product1.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+          <div class="product text-center">
+            <img src="./assets/images/categori/product2.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+          <div class="product text-center">
+            <img src="./assets/images/categori/product3.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+          <div class="product text-center">
+            <span class="badge new-badge">New</span>
+            <img src="./assets/images/categori/product4.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+          <div class="product text-center">
+            <img src="./assets/images/categori/product5.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+          <div class="product text-center">
+            <span class="badge new-badge">New</span>
+            <img src="./assets/images/categori/product6.png" alt="" />
+            <ul class="stars">
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i style="color: var(--yellow)" class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </ul>
+            <p class="product-name">Green Dress With Details</p>
+            <ul class="price">
+              <span>$40.00</span>
+              <span>$60.00</span>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- latest product end -->
+
+      <!-- card men start -->
+      <section class="card-men">
+        <span class="vertical-text">MANZ</span>
+        <div>
+          <img src="./assets/images/categori/card-man.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Find The Best Product From Our Shop</h2>
+          <p>Designers who are interesten creating state ofthe.</p>
+          <button>Shop Now</button>
+        </div>
+        <img
+          class="bounce"
+          src="./assets/images/categori/card-shape.png"
+          alt=""
+        />
+      </section>
+      <!-- card men end -->
+
+      <!-- collection section start -->
+      <section class="collection">
+        <div>
+          <div>
+            <h2>Best Collection of this Month</h2>
+            <p>Designers who are interested area.</p>
+            <button class="d_sign_in">Shop Now</button>
+          </div>
+          <div>
+            <img
+              class="jeans"
+              src="./assets/images/collection/collection1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <img
+            style="width: 250px !important"
+            src="./assets/images/collection/collection2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div>
+            <h3>
+              men's winter <br />
+              jacket
+            </h3>
+            <img
+              style="width: 100px !important"
+              src="./assets/images/collection/collection3.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>
+              men's winter <br />
+              jacket
+            </h3>
+            <img
+              style="width: 100px !important"
+              src="./assets/images/collection/collection4.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>
+              men's winter <br />
+              jacket
+            </h3>
+            <img
+              style="width: 100px !important"
+              src="./assets/images/collection/collection5.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- collection section end -->
+
+      <!-- subscribe section start -->
+      <section class="subscribe">
+        <div class="content">
+          <div>
+            <h2>
+              Get our <br />
+              latest offers news
+            </h2>
+            <p>Subscribe news letter</p>
+          </div>
+          <div>
+            <input type="email" placeholder="Your email here" />
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <div class="man">
+          <img src="./assets/images/collection/latest-man.png" alt="" />
+        </div>
+      </section>
+      <!-- subscribe section end -->
+
+      <!-- methods section start -->
+      <section class="methods">
+        <div>
+          <div>
+            <i class="fas fa-box"></i>
+          </div>
+          <h2>Free Shipping Method</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+        </div>
+        <div>
+          <div>
+            <i class="fas fa-unlock"></i>
+          </div>
+          <h2>Secure Payment System</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+        </div>
+        <div>
+          <div>
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h2>Secure Payment System</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+        </div>
+      </section>
+      <!-- methods section end -->
+
+      <!-- images section start -->
+      <section class="images">
+        <img src="./assets/images/gallery/gallery1.jpg" alt="" />
+        <img src="./assets/images/gallery/gallery2.jpg" alt="" />
+        <img src="./assets/images/gallery/gallery3.jpg" alt="" />
+        <img src="./assets/images/gallery/gallery4.jpg" alt="" />
+        <img src="./assets/images/gallery/gallery5.jpg" alt="" />
+      </section>
+      <!-- images section end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer starts -->
+    <footer>
+      <div class="top-arrow">
+        <a href="#top" class="fas fa-arrow-up"></a>
+      </div>
+      <div class="footer">
+        <div class="one">
+          <div>
+            <img width="120px" src="./assets/images/logo/logo.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              fuga deserunt unde nemo quas, necessitatibus.
+            </p>
+          </div>
+          <div>
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About</li>
+              <li>Offers & Discounts</li>
+              <li>Get Coupon</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div>
+            <h2>New Products</h2>
+            <ul>
+              <li>Woman Cloth</li>
+              <li>Fashion Accessories</li>
+              <li>Man Accessories</li>
+              <li>Rubber made Toys</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <ul>
+              <li>Frequently Asked Questions</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Privacy Policy</li>
+              <li>Report a Payment Issue</li>
+            </ul>
+          </div>
+        </div>
+        <div class="two">
+          <p>
+            Copyright ©2020 All rights reserved | This template is made with
+            <span class="fas fa-heart"></span> by
+            <span>Divyansh chaudhary</span>
+          </p>
+          <ul>
+            <i class="fas fa-twitter"></i>
+            <i class="fas fa-facebook-f"></i>
+            <i class="fas fa-instagram"></i>
+            <i class="fas fa-globe"></i>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery migrate -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"
+      integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
