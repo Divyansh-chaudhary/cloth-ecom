@@ -1,0 +1,391 @@
+/*************************** banner **********************************/
+.banner {
+  background-image: url(../images/hero/category.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 8rem 0;
+}
+
+/*************************** main section ***************************/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem auto;
+  grid-gap: 2rem;
+  max-width: 90%;
+}
+
+/*************************** main left section ***************************/
+
+.blog {
+  margin-bottom: 2.5rem;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog .top {
+  position: relative;
+}
+
+.blog .date {
+  background-color: var(--red);
+  color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0.7rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.blog .date:hover {
+  color: var(--red);
+  background-color: transparent;
+}
+
+.blog .date p,
+.blog .date h2 {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.blog .content {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  padding-right: 0;
+  line-height: 1.5;
+}
+
+.blog .content h2 {
+  font-size: 1.1rem;
+  color: var(--l-black);
+  margin: 0.3rem 0 0.7rem 0;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.blog .content h2:hover {
+  color: var(--red);
+}
+
+.blog .content p {
+  color: var(--light-black);
+}
+
+.blog .comments {
+  display: flex;
+  margin-top: 1.3rem;
+  color: var(--light-black);
+}
+
+.blog .comments > div:first-child {
+  border-right: 1px solid var(--light-black);
+  margin-right: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.blog .comments > div {
+  cursor: pointer;
+}
+
+.blog .comments > div:hover {
+  color: var(--red);
+}
+
+/*************************** pagination ***************************/
+.pagination {
+  width: fit-content;
+  margin: 4rem auto;
+}
+
+.pagination ul {
+  display: flex;
+}
+
+.pagination ul li {
+  color: var(--l-black);
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.pagination ul li:hover {
+  color: var(--red);
+}
+
+.pagination .active {
+  background-color: rgb(243, 243, 243);
+}
+
+/*************************** right main section ***************************/
+main .right > div {
+  background-color: rgb(251, 249, 255);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+main .right > div h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* search */
+main .right > .search {
+  margin-left: 0;
+}
+
+main .right > .search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+main .right > .search div input {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-right: none;
+  width: 85%;
+}
+
+main .right > .search div button {
+  border: none;
+  padding: 14px;
+  background-color: var(--blue);
+  border-left: none;
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .right > .search div button i {
+  font-size: 1.4rem;
+  color: white;
+}
+
+main .right > .search > button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .right > .search > button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid var(--red);
+}
+
+/* category */
+main .right > .category ul li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  color: var(--light-black);
+  cursor: pointer;
+}
+
+main .right > .category ul li:hover {
+  color: var(--red);
+}
+
+main .right > .category ul li:last-child {
+  border: none;
+}
+
+/* recent post */
+main .right > .recent-post ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+main .right > .recent-post ul li img {
+  width: 80px;
+  margin-right: 1rem;
+}
+
+main .right > .recent-post ul li div h3 {
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+main .right > .recent-post ul li div h3:hover {
+  color: var(--red);
+}
+
+main .right > .recent-post ul li div p {
+  color: var(--light-black);
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+/* top clouds */
+main .right > .top-clouds ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .right > .top-clouds ul li {
+  background-color: white;
+  color: var(--light-black);
+  padding: 7px 1.1rem;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  border: 0.5px solid #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+main .right > .top-clouds ul li:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+/* instagram-feeds */
+main .right > .instagram-feeds ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+main .right > .instagram-feeds img {
+  cursor: pointer;
+}
+
+/* newsletter */
+
+main .right > .newsletter input {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main .right > .newsletter > button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main .right > .newsletter > button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid var(--red);
+}
+
+/*************************** media queries ***************************/
+@media screen and (min-width: 576px) {
+  .footer .one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+  .blog .content {
+    padding: 2rem;
+  }
+
+  .blog .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog .date {
+    left: 2rem;
+  }
+  .blog .date h2,
+  .blog .date p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.top-arrow a {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+  }
+
+  .footer {
+    padding: 0 2rem;
+  }
+
+  .footer .one {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+
+  .footer .two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mobile-navbar {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: block;
+  }
+
+  .footer .one {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main {
+    grid-template-columns: 2fr 1fr;
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  nav .search,
+  nav .favourite {
+    display: flex;
+  }
+
+  main {
+    margin: 5rem auto;
+    max-width: 1100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+}
