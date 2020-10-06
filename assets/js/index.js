@@ -132,3 +132,63 @@ $(".latest-product-top ul li").click(function (event) {
   }
   $(this).addClass("active");
 });
+
+// category.html;
+$(".short-by .f-dropdown").click(() => {
+  if (document.querySelector(".featured-ul").style.display == "none") {
+    $(".short-by ul").slideDown("fast");
+    $(".short-by .fa-chevron-down").css({ transform: "rotate(180deg)" });
+  } else {
+    $(".short-by ul").slideUp("fast");
+    $(".short-by .fa-chevron-down").css({ transform: "rotate(0deg)" });
+  }
+});
+
+$(".featured-ul li").mouseover(() => {
+  $(".featured-ul li").css({ backgroundColor: "white" });
+});
+
+$(".featured-ul li").mouseleave(() => {
+  var category = $(".f-dropdown span").text();
+  var dropdown_items = $(".featured-ul li");
+  for (let i = 0; i <= 3; i++) {
+    if (category === dropdown_items.eq(i).text()) {
+      dropdown_items
+        .eq(i)
+        .css({ fontWeight: "bolder", backgroundColor: "rgb(0, 177, 255)" });
+      break;
+    }
+  }
+});
+$(".dropdown-item").click(function (event) {
+  var currency = event.target.innerText;
+  $(".dropdown .selected-currency").text(currency);
+  var selected_currency = $(".selected-currency").text();
+  var dropdown_items = $(".dropdown-item");
+  dropdown_items.css({ fontWeight: "500" });
+  for (let i = 0; i <= 3; i++) {
+    if (selected_currency === dropdown_items.eq(i).text()) {
+      dropdown_items
+        .eq(i)
+        .css({ fontWeight: "bolder", backgroundColor: "rgb(0, 177, 255)" });
+      break;
+    }
+  }
+});
+
+$(".featured-ul li").click(function (event) {
+  var category_name = event.target.innerText;
+  $(".f-dropdown span").text(category_name);
+  var category_name = $(".f-dropdown span").text();
+  var li = $(".featured-ul li");
+  li.css({ fontWeight: "500" });
+  for (let i = 0; i <= 3; i++) {
+    if (category_name === li.eq(i).text()) {
+      li.eq(i).css({
+        fontWeight: "bolder",
+        backgroundColor: "rgb(0, 177, 255)",
+      });
+      break;
+    }
+  }
+});

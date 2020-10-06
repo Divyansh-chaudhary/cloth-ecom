@@ -161,7 +161,7 @@ main .right > .search div input {
   padding: 1rem;
   border: 1px solid #ddd;
   border-right: none;
-  width: 85%;
+  width: 82%;
 }
 
 main .right > .search div button {
@@ -169,13 +169,13 @@ main .right > .search div button {
   padding: 14px;
   background-color: var(--blue);
   border-left: none;
-  width: 15%;
+  width: 18%;
   text-align: center;
   cursor: pointer;
 }
 
 main .right > .search div button i {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
 }
 
